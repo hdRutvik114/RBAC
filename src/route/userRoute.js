@@ -18,5 +18,5 @@ router.get("/manager",verifytoken,verifyrole("manager","admin"),(req,res)=>{
 router.get("/user",verifytoken,verifyrole("manager","user","admin"),(req,res)=>{
     res.send("Hello iam user");
 })
-
+console.log("hi");
 export default router;
